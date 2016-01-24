@@ -1,2 +1,2 @@
 # Swift-StockFighter
-A set of solutions for StockFighter.io
+A set of Swift solutions for [StockFighter.io](http://stockfighter.io).
