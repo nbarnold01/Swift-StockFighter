@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31E1635C1C52B8BB00CA9231 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1635B1C52B8BB00CA9231 /* AppDelegate.swift */; };
+		31E1635E1C52B8BB00CA9231 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1635D1C52B8BB00CA9231 /* ViewController.swift */; };
+		31E163601C52B8BB00CA9231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31E1635F1C52B8BB00CA9231 /* Assets.xcassets */; };
+		31E163631C52B8BB00CA9231 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31E163611C52B8BB00CA9231 /* Main.storyboard */; };
+		31E1636E1C52B8BB00CA9231 /* StockFighterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1636D1C52B8BB00CA9231 /* StockFighterTests.swift */; };
+		31E163791C52B8BB00CA9231 /* StockFighterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E163781C52B8BB00CA9231 /* StockFighterUITests.swift */; };
+		31E163871C52BC4000CA9231 /* BrokerageAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E163861C52BC4000CA9231 /* BrokerageAccount.swift */; };
+		31E1638A1C52BD1800CA9231 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E163891C52BD1800CA9231 /* Order.swift */; };
+		31E1638C1C52BF1600CA9231 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1638B1C52BF1600CA9231 /* Level.swift */; };
+		31E1638F1C52BF5500CA9231 /* Level1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1638E1C52BF5500CA9231 /* Level1.swift */; };
+		31E163911C52C05D00CA9231 /* BrokerageAccountAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E163901C52C05D00CA9231 /* BrokerageAccountAPIClient.swift */; };
+		31E163941C54429400CA9231 /* TestLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E163931C54429400CA9231 /* TestLevel.swift */; };
+		4A441E7F04EC57E20C66A037 /* Pods_StockFighter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A25B07B0E8CD7A20696C7C /* Pods_StockFighter.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31E1636A1C52B8BB00CA9231 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31E163501C52B8BB00CA9231 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31E163571C52B8BB00CA9231;
+			remoteInfo = StockFighter;
+		};
+		31E163751C52B8BB00CA9231 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31E163501C52B8BB00CA9231 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31E163571C52B8BB00CA9231;
+			remoteInfo = StockFighter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31E163581C52B8BB00CA9231 /* StockFighter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockFighter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31E1635B1C52B8BB00CA9231 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		31E1635D1C52B8BB00CA9231 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		31E1635F1C52B8BB00CA9231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31E163621C52B8BB00CA9231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		31E163641C52B8BB00CA9231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31E163691C52B8BB00CA9231 /* StockFighterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockFighterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31E1636D1C52B8BB00CA9231 /* StockFighterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockFighterTests.swift; sourceTree = "<group>"; };
+		31E1636F1C52B8BB00CA9231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31E163741C52B8BB00CA9231 /* StockFighterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockFighterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31E163781C52B8BB00CA9231 /* StockFighterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockFighterUITests.swift; sourceTree = "<group>"; };
+		31E1637A1C52B8BB00CA9231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31E163861C52BC4000CA9231 /* BrokerageAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BrokerageAccount.swift; path = Models/BrokerageAccount.swift; sourceTree = "<group>"; };
+		31E163891C52BD1800CA9231 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		31E1638B1C52BF1600CA9231 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Level.swift; path = Levels/Level.swift; sourceTree = "<group>"; };
+		31E1638E1C52BF5500CA9231 /* Level1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Level1.swift; path = Levels/Level1.swift; sourceTree = "<group>"; };
+		31E163901C52C05D00CA9231 /* BrokerageAccountAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BrokerageAccountAPIClient.swift; path = Models/BrokerageAccountAPIClient.swift; sourceTree = "<group>"; };
+		31E163931C54429400CA9231 /* TestLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestLevel.swift; path = Levels/TestLevel.swift; sourceTree = "<group>"; };
+		A351C86AC66DBCDCDE8AEAB6 /* Pods-StockFighter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockFighter.release.xcconfig"; path = "Pods/Target Support Files/Pods-StockFighter/Pods-StockFighter.release.xcconfig"; sourceTree = "<group>"; };
+		A5A25B07B0E8CD7A20696C7C /* Pods_StockFighter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockFighter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD6DBC1BF8A559BFE17125C8 /* Pods-StockFighter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockFighter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StockFighter/Pods-StockFighter.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31E163551C52B8BB00CA9231 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A441E7F04EC57E20C66A037 /* Pods_StockFighter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31E163661C52B8BB00CA9231 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31E163711C52B8BB00CA9231 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31E1634F1C52B8BB00CA9231 = {
+			isa = PBXGroup;
+			children = (
+				31E1635A1C52B8BB00CA9231 /* StockFighter */,
+				31E1636C1C52B8BB00CA9231 /* StockFighterTests */,
+				31E163771C52B8BB00CA9231 /* StockFighterUITests */,
+				31E163591C52B8BB00CA9231 /* Products */,
+				A4862E54B4C58A789FD45F65 /* Pods */,
+				8412531BA135946F5DA01546 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		31E163591C52B8BB00CA9231 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31E163581C52B8BB00CA9231 /* StockFighter.app */,
+				31E163691C52B8BB00CA9231 /* StockFighterTests.xctest */,
+				31E163741C52B8BB00CA9231 /* StockFighterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31E1635A1C52B8BB00CA9231 /* StockFighter */ = {
+			isa = PBXGroup;
+			children = (
+				31E1635B1C52B8BB00CA9231 /* AppDelegate.swift */,
+				31E1635D1C52B8BB00CA9231 /* ViewController.swift */,
+				31E1635F1C52B8BB00CA9231 /* Assets.xcassets */,
+				31E163611C52B8BB00CA9231 /* Main.storyboard */,
+				31E1638D1C52BF3B00CA9231 /* Level */,
+				31E163881C52BC4700CA9231 /* Models */,
+				31E163641C52B8BB00CA9231 /* Info.plist */,
+			);
+			path = StockFighter;
+			sourceTree = "<group>";
+		};
+		31E1636C1C52B8BB00CA9231 /* StockFighterTests */ = {
+			isa = PBXGroup;
+			children = (
+				31E1636D1C52B8BB00CA9231 /* StockFighterTests.swift */,
+				31E1636F1C52B8BB00CA9231 /* Info.plist */,
+			);
+			path = StockFighterTests;
+			sourceTree = "<group>";
+		};
+		31E163771C52B8BB00CA9231 /* StockFighterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				31E163781C52B8BB00CA9231 /* StockFighterUITests.swift */,
+				31E1637A1C52B8BB00CA9231 /* Info.plist */,
+			);
+			path = StockFighterUITests;
+			sourceTree = "<group>";
+		};
+		31E163881C52BC4700CA9231 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				31E163861C52BC4000CA9231 /* BrokerageAccount.swift */,
+				31E163901C52C05D00CA9231 /* BrokerageAccountAPIClient.swift */,
+				31E163891C52BD1800CA9231 /* Order.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		31E1638D1C52BF3B00CA9231 /* Level */ = {
+			isa = PBXGroup;
+			children = (
+				31E1638B1C52BF1600CA9231 /* Level.swift */,
+				31E1638E1C52BF5500CA9231 /* Level1.swift */,
+				31E163931C54429400CA9231 /* TestLevel.swift */,
+			);
+			name = Level;
+			sourceTree = "<group>";
+		};
+		8412531BA135946F5DA01546 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5A25B07B0E8CD7A20696C7C /* Pods_StockFighter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4862E54B4C58A789FD45F65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD6DBC1BF8A559BFE17125C8 /* Pods-StockFighter.debug.xcconfig */,
+				A351C86AC66DBCDCDE8AEAB6 /* Pods-StockFighter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		31E163571C52B8BB00CA9231 /* StockFighter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31E1637D1C52B8BB00CA9231 /* Build configuration list for PBXNativeTarget "StockFighter" */;
+			buildPhases = (
+				95C073DB5F138C15C9B01F9E /* Check Pods Manifest.lock */,
+				31E163541C52B8BB00CA9231 /* Sources */,
+				31E163551C52B8BB00CA9231 /* Frameworks */,
+				31E163561C52B8BB00CA9231 /* Resources */,
+				6E1EA935D14ACDA498ED88B4 /* Embed Pods Frameworks */,
+				8B7EF8F10791709851B22C75 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StockFighter;
+			productName = StockFighter;
+			productReference = 31E163581C52B8BB00CA9231 /* StockFighter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		31E163681C52B8BB00CA9231 /* StockFighterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31E163801C52B8BB00CA9231 /* Build configuration list for PBXNativeTarget "StockFighterTests" */;
+			buildPhases = (
+				31E163651C52B8BB00CA9231 /* Sources */,
+				31E163661C52B8BB00CA9231 /* Frameworks */,
+				31E163671C52B8BB00CA9231 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31E1636B1C52B8BB00CA9231 /* PBXTargetDependency */,
+			);
+			name = StockFighterTests;
+			productName = StockFighterTests;
+			productReference = 31E163691C52B8BB00CA9231 /* StockFighterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		31E163731C52B8BB00CA9231 /* StockFighterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31E163831C52B8BB00CA9231 /* Build configuration list for PBXNativeTarget "StockFighterUITests" */;
+			buildPhases = (
+				31E163701C52B8BB00CA9231 /* Sources */,
+				31E163711C52B8BB00CA9231 /* Frameworks */,
+				31E163721C52B8BB00CA9231 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31E163761C52B8BB00CA9231 /* PBXTargetDependency */,
+			);
+			name = StockFighterUITests;
+			productName = StockFighterUITests;
+			productReference = 31E163741C52B8BB00CA9231 /* StockFighterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31E163501C52B8BB00CA9231 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Nathan Arnold";
+				TargetAttributes = {
+					31E163571C52B8BB00CA9231 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					31E163681C52B8BB00CA9231 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 31E163571C52B8BB00CA9231;
+					};
+					31E163731C52B8BB00CA9231 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 31E163571C52B8BB00CA9231;
+					};
+				};
+			};
+			buildConfigurationList = 31E163531C52B8BB00CA9231 /* Build configuration list for PBXProject "StockFighter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31E1634F1C52B8BB00CA9231;
+			productRefGroup = 31E163591C52B8BB00CA9231 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31E163571C52B8BB00CA9231 /* StockFighter */,
+				31E163681C52B8BB00CA9231 /* StockFighterTests */,
+				31E163731C52B8BB00CA9231 /* StockFighterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31E163561C52B8BB00CA9231 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31E163601C52B8BB00CA9231 /* Assets.xcassets in Resources */,
+				31E163631C52B8BB00CA9231 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31E163671C52B8BB00CA9231 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31E163721C52B8BB00CA9231 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E1EA935D14ACDA498ED88B4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StockFighter/Pods-StockFighter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B7EF8F10791709851B22C75 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StockFighter/Pods-StockFighter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95C073DB5F138C15C9B01F9E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31E163541C52B8BB00CA9231 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31E163911C52C05D00CA9231 /* BrokerageAccountAPIClient.swift in Sources */,
+				31E1638F1C52BF5500CA9231 /* Level1.swift in Sources */,
+				31E163941C54429400CA9231 /* TestLevel.swift in Sources */,
+				31E1638C1C52BF1600CA9231 /* Level.swift in Sources */,
+				31E163871C52BC4000CA9231 /* BrokerageAccount.swift in Sources */,
+				31E1635E1C52B8BB00CA9231 /* ViewController.swift in Sources */,
+				31E1638A1C52BD1800CA9231 /* Order.swift in Sources */,
+				31E1635C1C52B8BB00CA9231 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31E163651C52B8BB00CA9231 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31E1636E1C52B8BB00CA9231 /* StockFighterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31E163701C52B8BB00CA9231 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31E163791C52B8BB00CA9231 /* StockFighterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31E1636B1C52B8BB00CA9231 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31E163571C52B8BB00CA9231 /* StockFighter */;
+			targetProxy = 31E1636A1C52B8BB00CA9231 /* PBXContainerItemProxy */;
+		};
+		31E163761C52B8BB00CA9231 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31E163571C52B8BB00CA9231 /* StockFighter */;
+			targetProxy = 31E163751C52B8BB00CA9231 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		31E163611C52B8BB00CA9231 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31E163621C52B8BB00CA9231 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		31E1637B1C52B8BB00CA9231 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		31E1637C1C52B8BB00CA9231 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		31E1637E1C52B8BB00CA9231 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD6DBC1BF8A559BFE17125C8 /* Pods-StockFighter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StockFighter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gingerandthecyclist.StockFighter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		31E1637F1C52B8BB00CA9231 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A351C86AC66DBCDCDE8AEAB6 /* Pods-StockFighter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StockFighter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gingerandthecyclist.StockFighter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		31E163811C52B8BB00CA9231 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StockFighterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gingerandthecyclist.StockFighterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StockFighter.app/Contents/MacOS/StockFighter";
+			};
+			name = Debug;
+		};
+		31E163821C52B8BB00CA9231 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StockFighterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gingerandthecyclist.StockFighterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StockFighter.app/Contents/MacOS/StockFighter";
+			};
+			name = Release;
+		};
+		31E163841C52B8BB00CA9231 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StockFighterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gingerandthecyclist.StockFighterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = StockFighter;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		31E163851C52B8BB00CA9231 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StockFighterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gingerandthecyclist.StockFighterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = StockFighter;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31E163531C52B8BB00CA9231 /* Build configuration list for PBXProject "StockFighter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31E1637B1C52B8BB00CA9231 /* Debug */,
+				31E1637C1C52B8BB00CA9231 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31E1637D1C52B8BB00CA9231 /* Build configuration list for PBXNativeTarget "StockFighter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31E1637E1C52B8BB00CA9231 /* Debug */,
+				31E1637F1C52B8BB00CA9231 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31E163801C52B8BB00CA9231 /* Build configuration list for PBXNativeTarget "StockFighterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31E163811C52B8BB00CA9231 /* Debug */,
+				31E163821C52B8BB00CA9231 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31E163831C52B8BB00CA9231 /* Build configuration list for PBXNativeTarget "StockFighterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31E163841C52B8BB00CA9231 /* Debug */,
+				31E163851C52B8BB00CA9231 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31E163501C52B8BB00CA9231 /* Project object */;
+}
